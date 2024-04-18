@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.VBox?>
-
-<?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.unicalculator.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+      fx:controller="com.example.unicalculator.controllers.CalculatorController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label fx:id="output">0</Label>
+    <GridPane>
+        <Button fx:id="one" text="1" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button fx:id="two" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button fx:id="three" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Button fx:id="four" text="4" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Button fx:id="five" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button fx:id="six" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <Button fx:id="seven" text="7" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Button fx:id="eight" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button fx:id="nine" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Button fx:id="zero" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+        <Button fx:id="plus" text="+" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+        <Button fx:id="minus" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+        <Button fx:id="divide" text="/" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+        <Button fx:id="multiply" text="*" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+        <Button fx:id="reset" text="C" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+        <Button fx:id="equals" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5"/>
+        <Button fx:id="backslash" text="⇐" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
+
+    </GridPane>
+
 </VBox>
